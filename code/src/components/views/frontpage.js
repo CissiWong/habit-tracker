@@ -5,7 +5,7 @@ class Frontpage extends React.Component {
   render() {
     return (
       <div>
-        Find me in src/app.js!
+        Här är vår startsida där vi kallar in t ex day.js
       </div>
     )
   }
