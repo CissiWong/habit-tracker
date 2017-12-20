@@ -1,5 +1,6 @@
 import React from "react"
 import "./input.css"
+import Task from "./task"
 
 class Input extends React.Component {
 
@@ -11,26 +12,18 @@ class Input extends React.Component {
     }
   }
 
-  // onSubmit = event => {
-  //   event.preventDefault()
-  //   this.setState({
-  //     task " ",
-  //     schedule: [...this.state.schedule, this.state.task]
-  //   })
-  // }
-
-  handleChange = event => {
+  handleSubmit = event => {
+    event.preventDefault()
     this.setState({
-      task: event.target.value,
+      task: " ",
       schedule: [...this.state.schedule, this.state.task]
     })
   }
 
-  addTask = a => {
-    // Ensure the input field is not empty
-    if (a.length > 0) {
-      this.setState({ task: "" })
-    }
+  handleChange = event => {
+    this.setState({
+      task: event.target.value
+    })
   }
 
   render() {
@@ -58,8 +51,17 @@ class Input extends React.Component {
           <input type="checkbox" />Fre
           <input type="checkbox" />Lör
           <input type="checkbox" />Sön <br />
-          <button onClick={() => this.addTask(this.state.task)}>LÄGG TILL</button>
+          <button onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
+
+        <ul>
+          {
+            this.state.schedule.map(task => {
+              return <Task
+                task={task} />
+            })
+          }
+        </ul>
       </div>
     )
   }
