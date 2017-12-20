@@ -1,15 +1,15 @@
 import React from "react"
+// import Task from "../library/task"
 
-class Frontpage extends React.Component {
+class DayView extends React.Component {
 
   render() {
     return (
-      <div>
-        Här är vår startsida där vi kallar in t ex day.js
-      </div>
+      <div />
+      
     )
   }
 
 }
 
-export default Frontpage
+export default DayView

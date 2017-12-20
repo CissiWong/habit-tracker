@@ -1,5 +1,6 @@
 import React from "react"
 import Input from "./library/input"
+import DayView from "./views/dayView"
 
 class App extends React.Component {
 
@@ -8,6 +9,7 @@ class App extends React.Component {
       <div>
         <Input />
         {/* Här gör vi browserRouter */}
+        <DayView />
       </div>
     )
   }

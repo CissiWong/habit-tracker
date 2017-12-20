@@ -7,15 +7,19 @@ class Input extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      task: " ",
-      schedule: []
+      // day: " ",
+      task: "",
+      schedule: [
+        // { id: 0, task: "Cykla till skolan" },
+        // { id: 1, task: "Gympakläder" }
+      ]
     }
   }
 
   handleSubmit = event => {
     event.preventDefault()
     this.setState({
-      task: " ",
+      task: "",
       schedule: [...this.state.schedule, this.state.task]
     })
   }
@@ -44,16 +48,15 @@ class Input extends React.Component {
               onChange={this.handleChange} />
           </label>
           <h1>VILKEN DAG?</h1>
-          <input type="checkbox" />Mån
-          <input type="checkbox" />Tis
-          <input type="checkbox" />Ons
-          <input type="checkbox" />Tors
-          <input type="checkbox" />Fre
-          <input type="checkbox" />Lör
-          <input type="checkbox" />Sön <br />
+          <input type="checkbox" value="monday" />MÅ
+          <input type="checkbox" value="tuesday" />TI
+          <input type="checkbox" value="wednesday" />ON
+          <input type="checkbox" value="thursday" />TO
+          <input type="checkbox" value="friday" />FR
+          <input type="checkbox" value="saturday" />LÖ
+          <input type="checkbox" value="sunday" />Sön <br />
           <button onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
-
         <ul>
           {
             this.state.schedule.map(task => {
