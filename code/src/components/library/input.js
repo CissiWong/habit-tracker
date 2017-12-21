@@ -59,10 +59,8 @@ class Input extends React.Component {
         </form>
         <ul>
           {
-            this.state.schedule.map(task => {
-              return <Task
-                task={task} />
-            })
+            this.state.schedule.map(task => <Task
+              task={task} />) // we need to pass more props here, such as "id"
           }
         </ul>
       </div>
