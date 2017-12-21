@@ -7,8 +7,9 @@ class DayView extends React.Component {
 
   constructor(props) {
     super(props)
+    const schedule = JSON.parse(localStorage.getItem("newData"))
     this.state = {
-      schedule: JSON.parse(localStorage.getItem("newData"))
+      schedule: schedule || []
     }
   }
 
