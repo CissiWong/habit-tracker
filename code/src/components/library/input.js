@@ -48,7 +48,8 @@ class Input extends React.Component {
           <input type="checkbox" value="thursday" />TO
           <input type="checkbox" value="friday" />FR
           <input type="checkbox" value="saturday" />LÖ
-          <input type="checkbox" value="sunday" />Sön <br />
+          <input type="checkbox" value="sunday" />Sön
+          <br />
           <button onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
 
