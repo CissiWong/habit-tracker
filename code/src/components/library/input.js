@@ -1,32 +1,26 @@
 import React from "react"
 import "./input.css"
-import Task from "./task"
 
 class Input extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      // day: " ",
-      task: "",
-      schedule: [
-        // { id: 0, task: "Cykla till skolan" },
-        // { id: 1, task: "Gympakläder" }
-      ]
+      task: ""
     }
-  }
-
-  handleSubmit = event => {
-    event.preventDefault()
-    this.setState({
-      task: "",
-      schedule: [...this.state.schedule, this.state.task]
-    })
   }
 
   handleChange = event => {
     this.setState({
       task: event.target.value
+    })
+  }
+
+  handleSubmit = event => {
+    event.preventDefault()
+    this.props.onNewTask(this.state.task)
+    this.setState({
+      task: ""
     })
   }
 
@@ -57,12 +51,7 @@ class Input extends React.Component {
           <input type="checkbox" value="sunday" />Sön <br />
           <button onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
-        <ul>
-          {
-            this.state.schedule.map(task => <Task
-              task={task} />) // we need to pass more props here, such as "id"
-          }
-        </ul>
+
       </div>
     )
   }
