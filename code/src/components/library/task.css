@@ -29,3 +29,7 @@
 .category-sunday {
   background: #ff4047;
 }
+
+input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+}

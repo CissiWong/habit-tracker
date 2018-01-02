@@ -34,6 +34,18 @@ class DayView extends React.Component {
     })
   }
 
+  taskCompleted = id => {
+    const newSchedule = this.state.schedule.map(item => {
+      if (item.id === id) {
+        item.done = !item.done
+      }
+      return item
+    })
+    this.setState({
+      schedule: newSchedule
+    })
+  }
+
   render() {
     return (
       <div>
@@ -48,6 +60,7 @@ class DayView extends React.Component {
               day={task.day}
               task={task.task}
               done={task.done}
+              onChange={this.taskCompleted}
               onRemove={this.handleRemoveItem} />)
           }
         </ul>
