@@ -10,7 +10,8 @@ class DayView extends React.Component {
     super(props)
     const schedule = JSON.parse(localStorage.getItem("newData"))
     this.state = {
-      schedule: schedule || []
+      schedule: schedule || [],
+      filter: ""
     }
   }
 
@@ -48,21 +49,25 @@ class DayView extends React.Component {
   }
 
   filterDay = event => {
-    const weekday = event.target.value
-    if (weekday === this.state.schedule.day) {
-      return weekday
-    }
+    this.setState({
+      filter: event.target.value
+    })
   }
 
   render() {
-    const days = this.state.schedule.sort((a, b) => (b.day - a.day))
+    let schedule = this.state.schedule.sort((a, b) => (b.day - a.day))
+    if (this.state.filter !== "") {
+      schedule = schedule.filter(item => (
+        item.day === this.state.filter
+      ))
+    }
     return (
       <div>
         <Input
           onNewTask={this.handleNewTask} />
         <ul>
           {
-            days.map((task, index) => <Task
+            schedule.map((task, index) => <Task
               key={task.id}
               index={index}
               id={task.id}
