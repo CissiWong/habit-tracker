@@ -13,8 +13,10 @@ class DayView extends React.Component {
     }
   }
 
-  handleNewTask = newActivity => {
-    const task = { id: uuid(), task: newActivity, done: false }
+  handleNewTask = (newActivity, newDay) => {
+    const task = {
+      id: uuid(), task: newActivity, done: false, day: newDay
+    }
     this.setState({
       schedule: [task, ...this.state.schedule]
     }, () => {
@@ -32,6 +34,7 @@ class DayView extends React.Component {
             this.state.schedule.map(task => <Task
               key={task.id}
               id={task.id}
+              day={task.day}
               task={task.task}
               done={task.done} />)
           }
