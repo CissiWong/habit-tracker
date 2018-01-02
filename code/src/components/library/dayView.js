@@ -2,6 +2,7 @@ import React from "react"
 import uuid from "uuid/v4"
 import Task from "./task"
 import Input from "./input"
+import "./dayView.css"
 
 class DayView extends React.Component {
 
@@ -65,6 +66,16 @@ class DayView extends React.Component {
               onRemove={this.handleRemoveItem} />)
           }
         </ul>
+        <select className="scrollDown">
+          <option className="weekday">Välj dag...</option>
+          <option className="weekday" value="0">Måndag</option>
+          <option className="weekday" value="1">Tisdag</option>
+          <option className="weekday" value="2">Onsdag</option>
+          <option className="weekday" value="3">Torsdag</option>
+          <option className="weekday" value="4">Fredag</option>
+          <option className="weekday" value="5">Lördag</option>
+          <option className="weekday" value="6">Söndag</option>
+        </select>
       </div>
     )
   }
