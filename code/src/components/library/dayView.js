@@ -24,6 +24,16 @@ class DayView extends React.Component {
     })
   }
 
+  handleRemoveItem = id => {
+    const newTasks = [...this.state.schedule]
+    newTasks.splice(id, 1)
+    this.setState({
+      schedule: newTasks
+    }, () => {
+      localStorage.setItem("newData", JSON.stringify(this.state.schedule))
+    })
+  }
+
   render() {
     return (
       <div>
@@ -31,12 +41,14 @@ class DayView extends React.Component {
           onNewTask={this.handleNewTask} />
         <ul>
           {
-            this.state.schedule.map(task => <Task
+            this.state.schedule.map((task, index) => <Task
               key={task.id}
+              index={index}
               id={task.id}
               day={task.day}
               task={task.task}
-              done={task.done} />)
+              done={task.done}
+              onRemove={this.handleRemoveItem} />)
           }
         </ul>
       </div>
