@@ -87,6 +87,7 @@ class DayView extends React.Component {
           <option className="weekday" value="4">Fredag</option>
           <option className="weekday" value="5">Lördag</option>
           <option className="weekday" value="6">Söndag</option>
+          <option className="weekday" value="">Visa allt</option>
         </select>
       </div>
     )
