@@ -1,4 +1,21 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.day-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .scrollDown {
   background: white;
   padding: 5px;
+  width: 150px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }

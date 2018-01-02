@@ -36,14 +36,17 @@ class Input extends React.Component {
       <div className="input__wrapper">
         {/* Ska göras dynamisk med JS */}
         <form>
-          <label htmlFor="activity" ><h1>DIN AKTIVITET:</h1>
-            <input
-              id="activity"
-              value={this.state.task}
-              type="text"
-              onChange={this.handleChange} />
-          </label>
-          <h1>VILKEN DAG?</h1>
+          <div className="container">
+            <label htmlFor="activity">
+              <h1>DIN AKTIVITET:</h1>
+              <input
+                id="activity"
+                value={this.state.task}
+                type="text"
+                onChange={this.handleChange} />
+            </label>
+            <h1>VILKEN DAG?</h1>
+          </div>
           <input type="radio" name="day" value="0" onChange={this.changeDay} />MÅ
           <input type="radio" name="day" value="1" onChange={this.changeDay} />TI
           <input type="radio" name="day" value="2" onChange={this.changeDay} />ON

@@ -63,8 +63,24 @@ class DayView extends React.Component {
     }
     return (
       <div>
-        <Input
-          onNewTask={this.handleNewTask} />
+        <div className="input-container">
+          <Input
+            onNewTask={this.handleNewTask} />
+        </div>
+        <div className="day-container">
+          <select className="scrollDown" onChange={this.filterDay}>
+            <option className="weekday">Välj dag...</option>
+            <option className="weekday" value="0">Måndag</option>
+            <option className="weekday" value="1">Tisdag</option>
+            <option className="weekday" value="2">Onsdag</option>
+            <option className="weekday" value="3">Torsdag</option>
+            <option className="weekday" value="4">Fredag</option>
+            <option className="weekday" value="5">Lördag</option>
+            <option className="weekday" value="6">Söndag</option>
+            <option className="weekday" value="">Visa allt</option>
+          </select>
+        </div>
+
         <ul>
           {
             schedule.map((task, index) => <Task
@@ -78,17 +94,7 @@ class DayView extends React.Component {
               onRemove={this.handleRemoveItem} />)
           }
         </ul>
-        <select className="scrollDown" onChange={this.filterDay}>
-          <option className="weekday">Välj dag...</option>
-          <option className="weekday" value="0">Måndag</option>
-          <option className="weekday" value="1">Tisdag</option>
-          <option className="weekday" value="2">Onsdag</option>
-          <option className="weekday" value="3">Torsdag</option>
-          <option className="weekday" value="4">Fredag</option>
-          <option className="weekday" value="5">Lördag</option>
-          <option className="weekday" value="6">Söndag</option>
-          <option className="weekday" value="">Visa allt</option>
-        </select>
+
       </div>
     )
   }
