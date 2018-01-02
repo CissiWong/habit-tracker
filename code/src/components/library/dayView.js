@@ -47,6 +47,13 @@ class DayView extends React.Component {
     })
   }
 
+  filterDay = event => {
+    const weekday = event.target.value
+    if (weekday === this.state.schedule.day) {
+      return weekday
+    }
+  }
+
   render() {
     const days = this.state.schedule.sort((a, b) => (b.day - a.day))
     return (
@@ -66,7 +73,7 @@ class DayView extends React.Component {
               onRemove={this.handleRemoveItem} />)
           }
         </ul>
-        <select className="scrollDown">
+        <select className="scrollDown" onChange={this.filterDay}>
           <option className="weekday">Välj dag...</option>
           <option className="weekday" value="0">Måndag</option>
           <option className="weekday" value="1">Tisdag</option>
