@@ -1,12 +1,16 @@
 import React from "react"
+import "./task.css"
 
 class Task extends React.Component {
 
   render() {
+    const categoryClass = `daybox category-${this.props.day}`
     return (
-      <li>
-        {this.props.task}
-      </li>
+      <div className={categoryClass}>
+        <li>
+          {this.props.task}
+        </li>
+      </div>
     )
   }
 

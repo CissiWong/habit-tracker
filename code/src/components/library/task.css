@@ -1,0 +1,31 @@
+.daybox {
+  padding: 20px;
+}
+
+.category-monday {
+  background: #8cd163;
+}
+
+.category-tuesday {
+  background: #8ecdd9;
+}
+
+.category-wednesday {
+  background: #fff;
+}
+
+.category-thursday {
+  background: #ca8e5f;
+}
+
+.category-friday {
+  background: #fefe83;
+}
+
+.category-saturday {
+  background: #fea8d5;
+}
+
+.category-sunday {
+  background: #ff4047;
+}
