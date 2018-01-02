@@ -47,13 +47,14 @@ class DayView extends React.Component {
   }
 
   render() {
+    const days = this.state.schedule.sort((a, b) => (b.day - a.day))
     return (
       <div>
         <Input
           onNewTask={this.handleNewTask} />
         <ul>
           {
-            this.state.schedule.map((task, index) => <Task
+            days.map((task, index) => <Task
               key={task.id}
               index={index}
               id={task.id}

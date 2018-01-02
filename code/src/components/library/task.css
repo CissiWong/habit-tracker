@@ -2,31 +2,31 @@
   padding: 20px;
 }
 
-.category-monday {
+.category-0 {
   background: #8cd163;
 }
 
-.category-tuesday {
+.category-1 {
   background: #8ecdd9;
 }
 
-.category-wednesday {
+.category-2 {
   background: #fff;
 }
 
-.category-thursday {
+.category-3 {
   background: #ca8e5f;
 }
 
-.category-friday {
+.category-4 {
   background: #fefe83;
 }
 
-.category-saturday {
+.category-5 {
   background: #fea8d5;
 }
 
-.category-sunday {
+.category-6 {
   background: #ff4047;
 }
 

@@ -7,7 +7,7 @@ class Input extends React.Component {
     super(props)
     this.state = {
       task: "",
-      day: "monday"
+      day: ""
     }
   }
 
@@ -44,13 +44,13 @@ class Input extends React.Component {
               onChange={this.handleChange} />
           </label>
           <h1>VILKEN DAG?</h1>
-          <input type="checkbox" name="day" value="monday" onChange={this.changeDay} />MÅ
-          <input type="checkbox" name="day" value="tuesday" onChange={this.changeDay} />TI
-          <input type="checkbox" name="day" value="wednesday" onChange={this.changeDay} />ON
-          <input type="checkbox" name="day" value="thursday" onChange={this.changeDay} />TO
-          <input type="checkbox" name="day" value="friday" onChange={this.changeDay} />FR
-          <input type="checkbox" name="day" value="saturday" onChange={this.changeDay} />LÖ
-          <input type="checkbox" name="day" value="sunday" onChange={this.changeDay} />SÖ
+          <input type="checkbox" name="day" value="0" onChange={this.changeDay} />MÅ
+          <input type="checkbox" name="day" value="1" onChange={this.changeDay} />TI
+          <input type="checkbox" name="day" value="2" onChange={this.changeDay} />ON
+          <input type="checkbox" name="day" value="3" onChange={this.changeDay} />TO
+          <input type="checkbox" name="day" value="4" onChange={this.changeDay} />FR
+          <input type="checkbox" name="day" value="5" onChange={this.changeDay} />LÖ
+          <input type="checkbox" name="day" value="6" onChange={this.changeDay} />SÖ
           <br />
           <button onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
