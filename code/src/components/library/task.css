@@ -1,34 +1,42 @@
 .daybox {
   padding: 20px;
   margin: 5px;
+  text-align: left;
 }
 
 .category-0 {
   background: #8cd163;
+  text-align: left;
 }
 
 .category-1 {
   background: #8ecdd9;
+  text-align: left;
 }
 
 .category-2 {
   background: #fff;
+  text-align: left;
 }
 
 .category-3 {
   background: #ca8e5f;
+  text-align: left;
 }
 
 .category-4 {
   background: #fefe83;
+  text-align: left;
 }
 
 .category-5 {
   background: #fea8d5;
+  text-align: left;
 }
 
 .category-6 {
   background: #ff4047;
+  text-align: left;
 }
 
 input[type=checkbox]:checked + span {
@@ -40,19 +48,17 @@ input[type=checkbox]:checked + span {
   margin: 10px;
 }
 
-
 .remove {
-cursor: pointer;
-color: #666666;
-border-radius: 20px;
-border: 0;
-background-color: transparent;
-font-size: 28px;
-font-weight: bold;
-display: inline-block;
-line-height: 0px;
-padding: 11px 3px;
-
+  cursor: pointer;
+  color: #666666;
+  border-radius: 20px;
+  border: 0;
+  background-color: transparent;
+  font-size: 28px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
 }
 
 .remove:before {
@@ -61,4 +67,12 @@ padding: 11px 3px;
 
 .remove:hover {
   color: black;
+}
+
+.text {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }

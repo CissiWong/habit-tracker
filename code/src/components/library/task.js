@@ -20,11 +20,11 @@ class Task extends React.Component {
             type="checkbox"
             checked={this.props.done}
             onChange={this.handleDone} />
-          <span>{this.props.task}</span>
-          <span>{this.props.icon}</span>
+          <span className="text">{this.props.task}</span>
+          <span className="icon">{this.props.icon}</span>
           <button
-            type="button"
             className="remove"
+            type="button"
             onClick={this.onClickRemove} />
         </label>
       </div>
