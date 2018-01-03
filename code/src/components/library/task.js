@@ -17,18 +17,16 @@ class Task extends React.Component {
       <div className={categoryClass}>
         <label>
 
-            <input
-              type="checkbox"
-              checked={this.props.done}
-              onChange={this.handleDone} />
-            <span className="text">{this.props.task}</span>
-            <span className="icon">{this.props.icon}</span>
-          
-            <button
-              className="remove"
-              type="button"
-              onClick={this.onClickRemove} />
-
+          <input
+            type="checkbox"
+            checked={this.props.done}
+            onChange={this.handleDone} />
+          <span className="text">{this.props.task}</span>
+          <span className="icon">{this.props.icon}</span>
+          <button
+            className="remove"
+            type="button"
+            onClick={this.onClickRemove} />
         </label>
 
       </div>
