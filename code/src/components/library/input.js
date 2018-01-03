@@ -61,15 +61,18 @@ class Input extends React.Component {
           <input type="radio" name="day" value="5" onChange={this.changeDay} />LÖ
           <input type="radio" name="day" value="6" onChange={this.changeDay} />SÖ
           <br />
-          <div className="icons">
-            <button><img src={bag} alt="bag" /></button>
-            <button><img src={bicycle} alt="bicycle" /></button>
-            <button><img src={food} alt="food" /></button>
-            <button><img src={gymbag} alt="gymbag" /></button>
-            <button><img src={toothbrush} alt="toothbrush" /></button>
-            <button><img src={sport} alt="sport" /></button>
+          <div className="icon-container">
+            <h1>VÄLJ EN SYMBOL:</h1>
+            <div className="icons">
+              <button><img src={bag} alt="bag" /></button>
+              <button><img src={bicycle} alt="bicycle" /></button>
+              <button><img src={food} alt="food" /></button>
+              <button><img src={gymbag} alt="gymbag" /></button>
+              <button><img src={toothbrush} alt="toothbrush" /></button>
+              <button><img src={sport} alt="sport" /></button>
+            </div>
+            <button className="add-button" onClick={this.handleSubmit}>LÄGG TILL</button>
           </div>
-          <button className="add-button" onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
 
       </div>
