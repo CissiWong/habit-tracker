@@ -25,8 +25,7 @@ class Task extends React.Component {
           <button
             type="button"
             className="remove"
-            onClick={this.onClickRemove}>TA BORT
-          </button>
+            onClick={this.onClickRemove} />
         </label>
       </div>
     )

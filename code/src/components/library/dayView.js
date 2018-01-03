@@ -82,9 +82,15 @@ class DayView extends React.Component {
             <option className="weekday" value="">Visa allt</option>
           </select>
         </div>
-        Avklarade aktiviteter: {this.state.schedule.filter(item => item.done === true).length}<br />
-        Alla veckans aktiviteter: {this.state.schedule.length} <br />
-        Dagens aktiviteter: {schedule.filter(item => (item.day === this.state.filter)).length}
+        <h6>Avklarade aktiviteter:
+          {this.state.schedule.filter(item => item.done === true).length}
+        </h6>
+        <h6>Alla veckans aktiviteter:
+          {this.state.schedule.length}
+        </h6>
+        <h6>Dagens aktiviteter:
+          {schedule.filter(item => (item.day === this.state.filter)).length}
+        </h6>
         <ul>
           {
             schedule.map((task, index) => <Task
