@@ -7,6 +7,7 @@
 .category-0 {
   background: #8cd163;
   text-align: left;
+
 }
 
 .category-1 {
@@ -49,6 +50,7 @@ input[type=checkbox]:checked + span {
 }
 
 .remove {
+  float: right;
   cursor: pointer;
   color: #666666;
   border-radius: 20px;
@@ -63,6 +65,8 @@ input[type=checkbox]:checked + span {
 
 .remove:before {
  content: "×";
+ margin-top: auto;
+ margin-bottom: auto;
 }
 
 .remove:hover {
