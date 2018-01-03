@@ -80,7 +80,7 @@ class DayView extends React.Component {
             <option className="weekday" value="">Visa allt</option>
           </select>
         </div>
-
+        {schedule.filter(item => (item.day === this.state.filter)).length}
         <ul>
           {
             schedule.map((task, index) => <Task
