@@ -11,7 +11,8 @@ class DayView extends React.Component {
     const schedule = JSON.parse(localStorage.getItem("newData"))
     this.state = {
       schedule: schedule || [],
-      filter: ""
+      filter: "",
+      scheduleDone: ""
     }
   }
 
@@ -82,7 +83,7 @@ class DayView extends React.Component {
             <option className="weekday" value="">Visa allt</option>
           </select>
         </div>
-        Avklarade aktiviteter: <br />
+        Avklarade aktiviteter: {this.state.schedule.filter(item => item.done === true).length}<br />
         Alla veckans aktiviteter: {this.state.schedule.length} <br />
         Dagens aktiviteter: {schedule.filter(item => (item.day === this.state.filter)).length}
         <ul>
