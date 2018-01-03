@@ -36,6 +36,6 @@ input[type=checkbox]:checked + span {
 }
 
 button {
-  background: white;
+  background: lightgrey;
   margin: 10px;
 }
