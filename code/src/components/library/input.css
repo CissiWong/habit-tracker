@@ -11,6 +11,11 @@ input {
 }
 
 img {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.icons {
+  margin: 20px;
 }
