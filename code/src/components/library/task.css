@@ -39,3 +39,26 @@ button {
   background: lightgrey;
   margin: 10px;
 }
+
+
+.remove {
+cursor: pointer;
+color: #666666;
+border-radius: 20px;
+border: 0;
+background-color: transparent;
+font-size: 28px;
+font-weight: bold;
+display: inline-block;
+line-height: 0px;
+padding: 11px 3px;
+
+}
+
+.remove:before {
+ content: "×";
+}
+
+.remove:hover {
+  color: black;
+}

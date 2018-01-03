@@ -46,6 +46,7 @@ class Input extends React.Component {
             <label htmlFor="activity">
               <h1>DIN AKTIVITET:</h1>
               <input
+                className="activity"
                 id="activity"
                 value={this.state.task}
                 type="text"
