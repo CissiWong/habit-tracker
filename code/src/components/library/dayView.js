@@ -15,9 +15,9 @@ class DayView extends React.Component {
     }
   }
 
-  handleNewTask = (newActivity, newDay) => {
+  handleNewTask = (newActivity, newDay, newIcon) => {
     const task = {
-      id: uuid(), task: newActivity, done: false, day: newDay
+      id: uuid(), task: newActivity, done: false, day: newDay, icon: newIcon
     }
     this.setState({
       schedule: [task, ...this.state.schedule]
@@ -95,7 +95,8 @@ class DayView extends React.Component {
               task={task.task}
               done={task.done}
               onChange={this.taskCompleted}
-              onRemove={this.handleRemoveItem} />)
+              onRemove={this.handleRemoveItem}
+              icon={task.icon} />)
           }
         </ul>
 
