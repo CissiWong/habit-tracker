@@ -9,3 +9,8 @@ input {
   border: solid black 1px;
   border-radius: 5px;
 }
+
+img {
+  width: 20px;
+  height: 20px;
+}

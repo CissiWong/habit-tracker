@@ -1,5 +1,11 @@
 import React from "react"
 import "./input.css"
+import bag from "./bag.png"
+import bicycle from "./bicycle.png"
+import food from "./food.png"
+import gymbag from "./gymbag.png"
+import sport from "./sport.png"
+import toothbrush from "./toothbrush.png"
 
 class Input extends React.Component {
 
@@ -55,6 +61,13 @@ class Input extends React.Component {
           <input type="radio" name="day" value="5" onChange={this.changeDay} />LÖ
           <input type="radio" name="day" value="6" onChange={this.changeDay} />SÖ
           <br />
+          <button><img src={bag} alt="bag" onClick={this.chooseIcon} /></button>
+          <button><img src={bicycle} alt="bicycle" /></button>
+          <button><img src={food} alt="food" /></button>
+          <button><img src={gymbag} alt="gymbag" /></button>
+          <button><img src={toothbrush} alt="toothbrush" /></button>
+          <button><img src={sport} alt="sport" /></button>
+
           <button onClick={this.handleSubmit}>LÄGG TILL</button>
         </form>
 
