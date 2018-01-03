@@ -11,8 +11,7 @@ class DayView extends React.Component {
     const schedule = JSON.parse(localStorage.getItem("newData"))
     this.state = {
       schedule: schedule || [],
-      filter: "",
-      scheduleDone: ""
+      filter: ""
     }
   }
 
