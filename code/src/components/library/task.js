@@ -21,6 +21,7 @@ class Task extends React.Component {
             checked={this.props.done}
             onChange={this.handleDone} />
           <span>{this.props.task}</span>
+          <span>{this.props.icon}</span>
           <button
             type="button"
             className="remove"

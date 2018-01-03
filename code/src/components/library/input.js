@@ -13,7 +13,8 @@ class Input extends React.Component {
     super(props)
     this.state = {
       task: "",
-      day: ""
+      day: "",
+      icon: ""
     }
   }
 
@@ -29,9 +30,15 @@ class Input extends React.Component {
     })
   }
 
+  chooseIcon = event => {
+    this.setState({
+      icon: event.target.value
+    })
+  }
+
   handleSubmit = event => {
     event.preventDefault()
-    this.props.onNewTask(this.state.task, this.state.day)
+    this.props.onNewTask(this.state.task, this.state.day, this.state.icon)
     this.setState({
       task: ""
     })
@@ -65,12 +72,25 @@ class Input extends React.Component {
           <div className="icon-container">
             <h1>VÄLJ EN SYMBOL:</h1>
             <div className="icons">
-              <button><img src={bag} alt="bag" /></button>
-              <button><img src={bicycle} alt="bicycle" /></button>
-              <button><img src={food} alt="food" /></button>
-              <button><img src={gymbag} alt="gymbag" /></button>
-              <button><img src={toothbrush} alt="toothbrush" /></button>
-              <button><img src={sport} alt="sport" /></button>
+              <label className="iconlabel">
+                <input type="radio" value="bag" onClick={this.chooseIcon} />
+                <img src={bag} alt="bag" />
+              </label>
+              <label className="iconlabel">
+                <input type="radio" value="bicycle" onClick={this.chooseIcon} /><img src={bicycle} alt="bicycle" />
+              </label>
+              <label className="iconlabel">
+                <input type="radio" value="food" onClick={this.chooseIcon} /><img src={food} alt="food" />
+              </label>
+              <label className="iconlabel">
+                <input type="radio" value="gymbag" onClick={this.chooseIcon} /><img src={gymbag} alt="gymbag" />
+              </label>
+              <label className="iconlabel">
+                <input type="radio" value="toothbrush" onClick={this.chooseIcon} /><img src={toothbrush} alt="toothbrush" />
+              </label>
+              <label className="iconlabel">
+                <input type="radio" value="sport" onClick={this.chooseIcon} /><img src={sport} alt="sport" />
+              </label>
             </div>
             <button className="add-button" onClick={this.handleSubmit}>LÄGG TILL</button>
           </div>
