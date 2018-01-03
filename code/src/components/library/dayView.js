@@ -45,6 +45,8 @@ class DayView extends React.Component {
     })
     this.setState({
       schedule: newSchedule
+    }, () => {
+      localStorage.setItem("newData", JSON.stringify(this.state.schedule))
     })
   }
 
@@ -80,6 +82,7 @@ class DayView extends React.Component {
             <option className="weekday" value="">Visa allt</option>
           </select>
         </div>
+        Avklarade aktiviteter: <br />
         Alla veckans aktiviteter: {this.state.schedule.length} <br />
         Dagens aktiviteter: {schedule.filter(item => (item.day === this.state.filter)).length}
         <ul>
