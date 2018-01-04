@@ -17,9 +17,10 @@ class DayView extends React.Component {
   }
 
   handleNewTask = (newActivity, newDay, newIcon) => {
-    if (newActivity === ("")) {
-      return null
+    if (newActivity === ("") || newDay === ("") || newIcon === ("")) {
+      alert("Hoppsan! Du glömde fylla i alla fält!")
     }
+
     const task = {
       id: uuid(), task: newActivity, done: false, day: newDay, icon: newIcon
     }
