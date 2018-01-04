@@ -23,6 +23,15 @@ input {
   border: solid black 1px;
 }
 
+.day-container {
+  display: flex;
+}
+
+.day-container + p {
+  margin: 0;
+}
+
+
 img {
   width: 30px;
   height: 30px;

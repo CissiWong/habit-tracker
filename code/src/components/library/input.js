@@ -65,14 +65,15 @@ class Input extends React.Component {
             </label>
             <h1>På vilken dag?</h1>
           </div>
-          <input type="radio" name="day" value="0" onChange={this.changeDay} />MÅ
-          <input type="radio" name="day" value="1" onChange={this.changeDay} />TI
-          <input type="radio" name="day" value="2" onChange={this.changeDay} />ON
-          <input type="radio" name="day" value="3" onChange={this.changeDay} />TO
-          <input type="radio" name="day" value="4" onChange={this.changeDay} />FR
-          <input type="radio" name="day" value="5" onChange={this.changeDay} />LÖ
-          <input type="radio" name="day" value="6" onChange={this.changeDay} />SÖ
-          <br />
+          <div className="day-container">
+            <input type="radio" name="day" value="0" onChange={this.changeDay} /><p>Måndag</p>
+            <input type="radio" name="day" value="1" onChange={this.changeDay} /><p>Tisdag</p>
+            <input type="radio" name="day" value="2" onChange={this.changeDay} /><p>Onsdag</p>
+            <input type="radio" name="day" value="3" onChange={this.changeDay} /><p>Torsdag</p>
+            <input type="radio" name="day" value="4" onChange={this.changeDay} /><p>Fredag</p>
+            <input type="radio" name="day" value="5" onChange={this.changeDay} /><p>Lördag</p>
+            <input type="radio" name="day" value="6" onChange={this.changeDay} /><p>Söndag</p>
+          </div>
           <div className="icon-container">
             <h1>Välj en bild:</h1>
             <div className="icons">
