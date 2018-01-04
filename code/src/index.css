@@ -1,13 +1,20 @@
 body {
   margin: 0;
   padding: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Cabin', sans-serif;
   text-align: center;
+  background-color: #e0f2f8;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Cabin', sans-serif;
   font-weight: 300;
+}
+
+h1 {
+  font-size: 28px;
 }
 
 h3 {
@@ -15,13 +22,13 @@ h3 {
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 input {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 option {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
