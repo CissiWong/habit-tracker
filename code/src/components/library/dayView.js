@@ -1,4 +1,5 @@
 import React from "react"
+import Chart from "./chart"
 import uuid from "uuid/v4"
 import Task from "./task"
 import Input from "./input"
@@ -87,7 +88,7 @@ class DayView extends React.Component {
         </h3> */}
         <h3>Veckans aktiviteter:<br />
           {this.state.schedule.filter(item => item.done === true).length}
-          / {parseInt(this.state.schedule.length,10)}
+          / {this.state.schedule.length}
         </h3>
         {/* <h3>Dagens aktiviteter:<br />
           {schedule.filter(item => (item.day === this.state.filter)).length}
@@ -96,6 +97,12 @@ class DayView extends React.Component {
           {schedule.filter(item => (item.day === this.state.filter && item.done === true)).length}
           / {schedule.filter(item => (item.day === this.state.filter)).length}
         </h3>
+
+        <Chart
+          done={this.state.schedule.filter(item => item.done === true).length}
+          notDone={this.state.schedule.length
+            - this.state.schedule.filter(item => item.done === true).length}
+          total={this.state.schedule.length} />
         <ul>
           {
             schedule.map((task, index) => <Task
