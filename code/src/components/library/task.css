@@ -10,22 +10,22 @@
 
 .category-0 {
   background: #8cd163;
-  text-align: left;
+
 }
 
 .category-1 {
   background: #8ecdd9;
-  text-align: left;
+
 }
 
 .category-2 {
   background: #fff;
-  text-align: left;
+
 }
 
 .category-3 {
   background: #ca8e5f;
-  text-align: left;
+
 }
 
 .category-4 {
@@ -41,6 +41,10 @@
 .category-6 {
   background: #ff4047;
   text-align: left;
+}
+
+input[type=checkbox]:checked + span {
+  text-decoration: line-through;
 }
 
 input[type=checkbox]:checked + span {
