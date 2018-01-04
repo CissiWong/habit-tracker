@@ -34,7 +34,7 @@ img {
 }
 
 .activity {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Nunito', sans-serif;
   border-radius: 10px;
   height: 30px;
   width: 200px;
@@ -44,7 +44,7 @@ img {
   height: 60px;
   width: 200px;
   background-color: #E03E52;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: white;
   font-size: 16px;
   text-transform: uppercase;
