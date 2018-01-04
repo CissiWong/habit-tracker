@@ -51,7 +51,7 @@ class Input extends React.Component {
         <form>
           <div className="container">
             <label htmlFor="activity">
-              <h1>DIN AKTIVITET:</h1>
+              <h1>Jag ska:</h1>
               <input
                 className="activity"
                 id="activity"
@@ -59,7 +59,7 @@ class Input extends React.Component {
                 type="text"
                 onChange={this.handleChange} />
             </label>
-            <h1>VILKEN DAG?</h1>
+            <h1>När då?</h1>
           </div>
           <input type="radio" name="day" value="0" onChange={this.changeDay} />Måndag
           <input type="radio" name="day" value="1" onChange={this.changeDay} />Tisdag
@@ -70,7 +70,7 @@ class Input extends React.Component {
           <input type="radio" name="day" value="6" onChange={this.changeDay} />Söndag
           <br />
           <div className="icon-container">
-            <h1>VÄLJ EN SYMBOL:</h1>
+            <h1>Välj en bild:</h1>
             <div className="icons">
               <label className="iconlabel">
                 <input type="radio" value="bag" onClick={this.chooseIcon} />

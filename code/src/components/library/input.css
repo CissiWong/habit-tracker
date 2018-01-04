@@ -34,18 +34,17 @@ img {
 }
 
 .activity {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
   border-radius: 10px;
   height: 30px;
   width: 200px;
 }
 
-
 .add-button {
   height: 60px;
   width: 200px;
   background-color: #E03E52;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
   color: white;
   font-size: 16px;
   text-transform: uppercase;
