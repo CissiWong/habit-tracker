@@ -114,7 +114,7 @@ class DayView extends React.Component {
               total={schedule.filter(item => (item.day === this.state.filter)).length} />
           </div>
         </div>
-        <ul>
+        <div className="tasks">
           {
             schedule.map((task, index) => <Task
               key={task.id}
@@ -127,7 +127,7 @@ class DayView extends React.Component {
               onRemove={this.handleRemoveItem}
               icon={task.icon} />)
           }
-        </ul>
+        </div>
 
       </div>
     )

@@ -1,3 +1,7 @@
+.tasks {
+  margin-top: 50px;
+}
+
 .daybox {
   padding: 20px;
   margin: 5px;
@@ -7,7 +11,6 @@
 .category-0 {
   background: #8cd163;
   text-align: left;
-
 }
 
 .category-1 {
