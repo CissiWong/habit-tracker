@@ -1,4 +1,5 @@
 import React from "react"
+import { PieChart } from "recharts"
 import "./input.css"
 import chooseIcon from "./chooseicon"
 import bag from "./bag.png"
