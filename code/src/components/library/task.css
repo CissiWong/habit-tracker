@@ -3,6 +3,9 @@
 }
 
 .daybox {
+  /* display: flex;
+  align-items: baseline;
+  align-content: space-between; */
   padding: 20px;
   margin: 5px;
   text-align: left;
@@ -10,37 +13,30 @@
 
 .category-0 {
   background: #8cd163;
-
 }
 
 .category-1 {
   background: #8ecdd9;
-
 }
 
 .category-2 {
   background: #fff;
-
 }
 
 .category-3 {
   background: #ca8e5f;
-
 }
 
 .category-4 {
   background: #fefe83;
-  text-align: left;
 }
 
 .category-5 {
   background: #fea8d5;
-  text-align: left;
 }
 
 .category-6 {
   background: #ff4047;
-  text-align: left;
 }
 
 input[type=checkbox]:checked ~ span {
@@ -53,6 +49,8 @@ input[type=checkbox]:checked + span {
 }
 
 .remove {
+  margin-top: auto;
+  margin-bottom: auto;
   float: right;
   cursor: pointer;
   color: #666666;
@@ -82,4 +80,9 @@ input[type=checkbox]:checked + span {
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
+}
+
+img.icon {
+  margin: 0 10px 0 10px;
+
 }
