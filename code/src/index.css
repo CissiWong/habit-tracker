@@ -21,6 +21,7 @@ h3 {
 
 button {
   font-family: 'Nunito', sans-serif;
+  cursor: pointer;
 }
 
 input {
@@ -29,4 +30,9 @@ input {
 
 option {
   font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import "./chooseIcon.css"
 
 export default class ChooseIcon extends React.Component {
 
@@ -19,9 +20,9 @@ export default class ChooseIcon extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="icons">
         <label className="iconlabel">
-          <input type="radio" className="iconbutton" value={this.props.symbol} onChange={this.chooseIcon} />
+          <input className="iconbutton" type="radio" value={this.props.symbol} onChange={this.chooseIcon} />
           <img src={this.props.symbol} alt="" />
         </label>
       </div>
