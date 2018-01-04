@@ -33,9 +33,9 @@ class Input extends React.Component {
     })
   }
 
-  handleChooseIcon = event => {
+  handleChooseIcon = icon => {
     this.setState({
-      icon: event.target.value
+      icon
     })
   }
 

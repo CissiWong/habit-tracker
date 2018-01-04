@@ -22,7 +22,7 @@ class Task extends React.Component {
             checked={this.props.done}
             onChange={this.handleDone} />
           <span className="text">{this.props.task}</span>
-          <span className="icon">{this.props.icon}</span>
+          <span className="icon"><img src={this.props.icon} alt="" /></span>
           <button
             className="remove"
             type="button"
