@@ -17,6 +17,9 @@ class DayView extends React.Component {
   }
 
   handleNewTask = (newActivity, newDay, newIcon) => {
+    if (newActivity === ("")) {
+      return null
+    }
     const task = {
       id: uuid(), task: newActivity, done: false, day: newDay, icon: newIcon
     }

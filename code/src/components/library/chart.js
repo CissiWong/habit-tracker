@@ -1,20 +1,18 @@
 import React from "react"
 import { PieChart, Pie, Cell } from "recharts"
 
-  const COLORS = ['#85d171', '#e53c53' ];
-  const RADIAN = Math.PI / 180;
-
-
+const COLORS = ['#e53c53', '#85d171']
+const RADIAN = Math.PI / 180
 
 export default class Chart extends React.Component {
 
-	  render() {
-      const total =  this.props.total
-      const data = [
-        { name: "done", value: this.props.done / total },
-        { name: "notDone", value: this.props.notDone / total }
-      ]
-  	return (
+  render() {
+    const total =  this.props.total
+    const data = [
+      { name: "done", value: this.props.done / total },
+      { name: "notDone", value: this.props.notDone / total }
+    ]
+    return (
       <PieChart width={800} height={400} onMouseEnter={this.onPieEnter}>
         <Pie
           data={data}
@@ -32,10 +30,3 @@ export default class Chart extends React.Component {
     )
   }
 }
-
-  //
-  // return (
-  //   <PieChart width={800} height={400}>
-  //     <Pie data={data} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d"/>
-  //     <Tooltip />
-  //   </PieChart>
