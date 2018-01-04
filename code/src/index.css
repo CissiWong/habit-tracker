@@ -26,6 +26,7 @@ button {
 
 input {
   font-family: 'Nunito', sans-serif;
+  cursor: pointer;
 }
 
 option {
@@ -34,5 +35,9 @@ option {
 }
 
 label {
+  cursor: pointer;
+}
+
+select {
   cursor: pointer;
 }

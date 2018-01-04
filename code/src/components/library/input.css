@@ -38,6 +38,7 @@ img {
   border-radius: 10px;
   height: 30px;
   width: 200px;
+  cursor: text;
 }
 
 .add-button {

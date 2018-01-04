@@ -53,8 +53,8 @@ class Input extends React.Component {
         {/* Ska göras dynamisk med JS */}
         <form>
           <div className="container">
+            <h1>DIN AKTIVITET:</h1>
             <label htmlFor="activity">
-              <h1>DIN AKTIVITET:</h1>
               <input
                 className="activity"
                 id="activity"

@@ -16,7 +16,6 @@ class Task extends React.Component {
     return (
       <div className={categoryClass}>
         <label>
-
           <input
             type="checkbox"
             checked={this.props.done}
