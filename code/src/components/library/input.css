@@ -37,3 +37,7 @@ img {
 .activity {
   font-family: 'Roboto', sans-serif;
 }
+
+.iconbutton {
+  visibility: hidden;
+}

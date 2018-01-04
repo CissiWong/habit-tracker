@@ -1,11 +1,14 @@
 import React from "react"
 import "./input.css"
+import chooseIcon from "./chooseicon"
 import bag from "./bag.png"
 import bicycle from "./bicycle.png"
 import food from "./food.png"
 import gymbag from "./gymbag.png"
 import sport from "./sport.png"
 import toothbrush from "./toothbrush.png"
+
+const icons = [bag, bicycle, food, gymbag, sport, toothbrush]
 
 class Input extends React.Component {
 
@@ -30,7 +33,7 @@ class Input extends React.Component {
     })
   }
 
-  chooseIcon = event => {
+  handleChooseIcon = event => {
     this.setState({
       icon: event.target.value
     })
@@ -72,30 +75,14 @@ class Input extends React.Component {
           <div className="icon-container">
             <h1>VÄLJ EN SYMBOL:</h1>
             <div className="icons">
-              <label className="iconlabel">
-                <input type="radio" value="bag" onClick={this.chooseIcon} />
-                <img src={bag} alt="bag" />
-              </label>
-              <label className="iconlabel">
-                <input type="radio" value="bicycle" onClick={this.chooseIcon} /><img src={bicycle} alt="bicycle" />
-              </label>
-              <label className="iconlabel">
-                <input type="radio" value="food" onClick={this.chooseIcon} /><img src={food} alt="food" />
-              </label>
-              <label className="iconlabel">
-                <input type="radio" value="gymbag" onClick={this.chooseIcon} /><img src={gymbag} alt="gymbag" />
-              </label>
-              <label className="iconlabel">
-                <input type="radio" value="toothbrush" onClick={this.chooseIcon} /><img src={toothbrush} alt="toothbrush" />
-              </label>
-              <label className="iconlabel">
-                <input type="radio" value="sport" onClick={this.chooseIcon} /><img src={sport} alt="sport" />
-              </label>
+              {
+                icons.map(symbol => (<chooseIcon
+                  symbol={symbol}
+                  setIcon={this.handleChooseIcon} />
+                ))}
             </div>
-            <button className="add-button" onClick={this.handleSubmit}>LÄGG TILL</button>
           </div>
         </form>
-
       </div>
     )
   }
