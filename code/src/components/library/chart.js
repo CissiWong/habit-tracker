@@ -13,14 +13,13 @@ export default class Chart extends React.Component {
       { name: "notDone", value: this.props.notDone / total }
     ]
     return (
-      <PieChart width={800} height={400} onMouseEnter={this.onPieEnter}>
+      <PieChart width={300} height={300} onMouseEnter={this.onPieEnter}>
         <Pie
           data={data}
           cx={120}
           cy={200}
           innerRadius={60}
           outerRadius={80}
-          fill="#8884d8"
           paddingAngle={5} >
           {
             data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)
