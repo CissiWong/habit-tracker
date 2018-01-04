@@ -1,19 +1,19 @@
 import React from "react"
 
-export default class chooseIcon extends React.Component {
+export default class ChooseIcon extends React.Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      icon: ""
+      habitIcon: ""
     }
   }
 
   chooseIcon = event => {
     this.setState({
-      icon: event.target.value
+      habitIcon: event.target.value
     }, () => {
-      this.props.setIcon(this.state.icon)
+      this.props.setIcon(this.state.habitIcon)
     })
   }
 
@@ -22,7 +22,7 @@ export default class chooseIcon extends React.Component {
       <div>
         <label className="iconlabel">
           <input type="radio" className="iconbutton" value={this.props.symbol} onChange={this.chooseIcon} />
-          <img src={this.props.symbol} />
+          <img src={this.props.symbol} alt="" />
         </label>
       </div>
     )
