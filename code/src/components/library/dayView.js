@@ -86,26 +86,33 @@ class DayView extends React.Component {
             <option className="weekday" value="">Visa allt</option>
           </select>
         </div>
-        <h3>Veckans aktiviteter:<br />
-          {this.state.schedule.filter(item => item.done === true).length}
-          / {this.state.schedule.length}
-        </h3>
-        <Chart
-          done={this.state.schedule.filter(item => item.done === true).length}
-          notDone={this.state.schedule.length
-            - this.state.schedule.filter(item => item.done === true).length}
-          total={this.state.schedule.length} />
-        <h3>Dagens aktiviteter:<br />
-          {schedule.filter(item => (item.day === this.state.filter && item.done === true)).length}
-          / {schedule.filter(item => (item.day === this.state.filter)).length}
-        </h3>
-        <Chart
-          done={schedule.filter(item =>
-            (item.day === this.state.filter && item.done === true)).length}
-          notDone={schedule.filter(item => (item.day === this.state.filter)).length
-            - schedule.filter(item =>
-              (item.day === this.state.filter && item.done === true)).length}
-          total={schedule.filter(item => (item.day === this.state.filter)).length} />
+        <div className="progress">
+          <div className="weekly-progress">
+            <h3>Veckans aktiviteter:<br />
+              {this.state.schedule.filter(item => item.done === true).length}
+              / {this.state.schedule.length}
+            </h3>
+            <Chart
+              done={this.state.schedule.filter(item => item.done === true).length}
+              notDone={this.state.schedule.length
+                - this.state.schedule.filter(item => item.done === true).length}
+              total={this.state.schedule.length} />
+          </div>
+          <div className="daily-progress">
+            <h3>Dagens aktiviteter:<br />
+              {schedule.filter(item =>
+                (item.day === this.state.filter && item.done === true)).length}
+              / {schedule.filter(item => (item.day === this.state.filter)).length}
+            </h3>
+            <Chart
+              done={schedule.filter(item =>
+                (item.day === this.state.filter && item.done === true)).length}
+              notDone={schedule.filter(item => (item.day === this.state.filter)).length
+                - schedule.filter(item =>
+                  (item.day === this.state.filter && item.done === true)).length}
+              total={schedule.filter(item => (item.day === this.state.filter)).length} />
+          </div>
+        </div>
         <ul>
           {
             schedule.map((task, index) => <Task
