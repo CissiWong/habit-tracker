@@ -83,7 +83,7 @@ class DayView extends React.Component {
           </select>
         </div>
         <h3>Veckans aktiviteter:<br />
-          {this.state.schedule.length}
+          {parseInt(this.state.schedule.length,10) / parseInt(this.state.schedule.length,10)}
         </h3>
         <h3>Veckans avklarade aktiviteter:<br />
           {this.state.schedule.filter(item => item.done === true).length}
