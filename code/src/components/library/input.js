@@ -54,7 +54,7 @@ class Input extends React.Component {
         {/* Ska göras dynamisk med JS */}
         <form>
           <div className="container">
-            <h1>DIN AKTIVITET:</h1>
+            <h1>Vad ska du göra?</h1>
             <label htmlFor="activity">
               <input
                 className="activity"
@@ -63,7 +63,7 @@ class Input extends React.Component {
                 type="text"
                 onChange={this.handleChange} />
             </label>
-            <h1>VILKEN DAG?</h1>
+            <h1>På vilken dag?</h1>
           </div>
           <input type="radio" name="day" value="0" onChange={this.changeDay} />MÅ
           <input type="radio" name="day" value="1" onChange={this.changeDay} />TI
@@ -74,7 +74,7 @@ class Input extends React.Component {
           <input type="radio" name="day" value="6" onChange={this.changeDay} />SÖ
           <br />
           <div className="icon-container">
-            <h1>VÄLJ EN SYMBOL:</h1>
+            <h1>Välj en bild:</h1>
             <div className="icons">
               {
                 icons.map(symbol => (<ChooseIcon
