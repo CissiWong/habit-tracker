@@ -43,8 +43,9 @@
   text-align: left;
 }
 
-input[type=checkbox]:checked + span {
+input[type=checkbox]:checked ~ span {
   text-decoration: line-through;
+  opacity: 0.5;
 }
 
 input[type=checkbox]:checked + span {
