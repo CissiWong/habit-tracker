@@ -1,8 +1,7 @@
 import React from "react"
 import { PieChart, Pie, Cell } from "recharts"
 
-  const COLORS = [ '#85d171', '#e53c53']
-  const RADIAN = Math.PI / 180
+const COLORS = ["#85d171", "#e53c53"]
 
 export default class Chart extends React.Component {
 
