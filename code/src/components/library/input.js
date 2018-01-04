@@ -1,7 +1,7 @@
 import React from "react"
 import { PieChart } from "recharts"
 import "./input.css"
-import chooseIcon from "./chooseicon"
+import ChooseIcon from "./chooseicon"
 import bag from "./bag.png"
 import bicycle from "./bicycle.png"
 import food from "./food.png"
@@ -77,7 +77,7 @@ class Input extends React.Component {
             <h1>VÄLJ EN SYMBOL:</h1>
             <div className="icons">
               {
-                icons.map(symbol => (<chooseIcon
+                icons.map(symbol => (<ChooseIcon
                   symbol={symbol}
                   setIcon={this.handleChooseIcon} />
                 ))}
