@@ -2,19 +2,21 @@
   display: flex;
 }
 
-.iconlabel > input:active + img {
-  border: solid 1px black;
+.iconlabel > input:active + .imgicon {
+  border: solid 2px black;
   border-radius: 50%;
   padding: 10px;
 }
 
-img:hover {
+.imgicon:hover {
   border: solid 1px black;
   border-radius: 50%;
-  padding: 10px;
 }
 
 .iconbutton {
   visibility: hidden;
   position: relative;
+}
+.icons {
+  margin: 20px;
 }

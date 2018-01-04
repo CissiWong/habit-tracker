@@ -23,7 +23,7 @@ export default class ChooseIcon extends React.Component {
       <div className="icons">
         <label className="iconlabel">
           <input className="iconbutton" type="radio" value={this.props.symbol} onChange={this.chooseIcon} />
-          <img src={this.props.symbol} alt="" />
+          <img className="imgicon" src={this.props.symbol} alt="" />
         </label>
       </div>
     )
