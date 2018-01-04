@@ -1,13 +1,13 @@
 import React from "react"
 import { PieChart, Pie, Cell } from "recharts"
 
-const COLORS = ['#e53c53', '#85d171']
-const RADIAN = Math.PI / 180
+  const COLORS = [ '#85d171', '#e53c53']
+  const RADIAN = Math.PI / 180
 
 export default class Chart extends React.Component {
 
   render() {
-    const total =  this.props.total
+    const total = this.props.total
     const data = [
       { name: "done", value: this.props.done / total },
       { name: "notDone", value: this.props.notDone / total }
