@@ -1,5 +1,4 @@
 import React from "react"
-import { PieChart, Pie, Legend, Tooltip } from "recharts"
 import uuid from "uuid/v4"
 import Task from "./task"
 import Input from "./input"
@@ -56,15 +55,6 @@ class DayView extends React.Component {
       filter: event.target.value
     })
   }
-
-  // const data02 = [
-  //                 {name: "Group A", value: 2400},
-  //                 {name: "Group B", value: 4567},
-  //                 {name: "Group C", value: 1398},
-  //                 {name: "Group D", value: 9800},
-  //                 {name: "Group E", value: 3908},
-  //                 {name: "Group F", value: 4800}
-  //               ]
 
   render() {
     let schedule = this.state.schedule.sort((a, b) => (b.day - a.day))
