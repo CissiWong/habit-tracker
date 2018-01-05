@@ -74,9 +74,9 @@ class DayView extends React.Component {
         <h1 id="headline">MITT SCHEMA</h1>
 
         <label htmlFor="add-task" className="add-task">
-          <div className="open">
+          <span className="open">
             <img className="rotate" src={icon} alt="" />
-          </div>
+          </span>
         </label>
         <input className="toggle-input" type="checkbox" id="add-task" name="add-input" />
         <div className="input-container">
