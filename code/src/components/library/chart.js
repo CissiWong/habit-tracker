@@ -1,5 +1,6 @@
 import React from "react"
 import { PieChart, Pie, Cell } from "recharts"
+import "./chart.css"
 
 const COLORS = ["#85d171", "#e53c53"]
 
