@@ -32,7 +32,6 @@
   top: 0;
 }
 
-<<<<<<< HEAD
 .toggle-input:checked +  {
   -webkit-animation: spin 2s infinite; /* Safari 4+ */
   -moz-animation:    spin 2s infinite; /* Fx 5+ */
@@ -50,10 +49,7 @@
 }
 
 
-.day-container {
-=======
 .day-container-scroll {
->>>>>>> 9b9e3634c890b1ac6f6323367d560553c4d6f945
   display: flex;
   justify-content: center;
   padding: 20px;

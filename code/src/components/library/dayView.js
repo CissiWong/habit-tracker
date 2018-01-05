@@ -71,8 +71,6 @@ class DayView extends React.Component {
     }
     return (
       <div className="add-task-wrapper">
-
-
         <h1 id="headline">MITT SCHEMA</h1>
 
         <label htmlFor="add-task" className="add-task">
