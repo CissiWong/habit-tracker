@@ -43,8 +43,7 @@ class Input extends React.Component {
     event.preventDefault()
     this.props.onNewTask(this.state.task, this.state.day, this.state.icon)
     this.setState({
-      task: "",
-      day: ""
+      task: ""
     })
   }
 
