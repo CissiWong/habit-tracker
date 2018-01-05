@@ -24,7 +24,7 @@
   top: 0;
 }
 
-.day-container {
+.day-container-scroll {
   display: flex;
   justify-content: center;
   padding: 20px;

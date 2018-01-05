@@ -82,7 +82,7 @@ class DayView extends React.Component {
           <Input
             onNewTask={this.handleNewTask} />
         </div>
-        <div className="day-container">
+        <div className="day-container-scroll">
           <select className="scrollDown" onChange={this.filterDay}>
             <option className="weekday">Välj dag...</option>
             <option className="weekday" value="0">Måndag</option>
