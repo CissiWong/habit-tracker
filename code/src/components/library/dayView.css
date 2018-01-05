@@ -1,7 +1,7 @@
 .input-container {
   position: absolute;
   top: -100%;
-  margin-top: 300px;
+  margin-top: 350px;
   background-color: #e0f2f8;
   z-index: 1;
   border: solid 1px black;
@@ -10,8 +10,12 @@
   transform: translate(-50%, -50%);
 }
 
+.open {
+  margin: 20px;
+  padding: 10px;
+}
+
 .add-task {
-  /* position: relative; */
   display: block;
   position: relative;
 }
@@ -23,6 +27,23 @@
 .toggle-input:checked + .input-container {
   top: 0;
 }
+
+.toggle-input:checked +  {
+  -webkit-animation: spin 2s infinite; /* Safari 4+ */
+  -moz-animation:    spin 2s infinite; /* Fx 5+ */
+  -o-animation:      spin 2s infinite; /* Opera 12+ */
+  animation:         spin 2s infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
 
 .day-container {
   display: flex;

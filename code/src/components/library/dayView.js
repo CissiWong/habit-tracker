@@ -71,10 +71,9 @@ class DayView extends React.Component {
     }
     return (
       <div className="add-task-wrapper">
-        <h1 id="headline">HABIT TRACKER</h1>
         <label htmlFor="add-task" className="add-task">
           <div className="open">
-            <img src={icon} alt="" />
+            <img className="rotate" src={icon} alt="" />
           </div>
         </label>
         <input className="toggle-input" type="checkbox" id="add-task" name="add-input" />
