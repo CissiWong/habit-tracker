@@ -4,6 +4,7 @@ import Chart from "./chart"
 import Task from "./task"
 import Input from "./input"
 import "./dayView.css"
+import icon from "./down-arrow-in-small-circle-blk.svg"
 
 class DayView extends React.Component {
 
@@ -72,7 +73,9 @@ class DayView extends React.Component {
       <div className="add-task-wrapper">
         <h1 id="headline">HABIT TRACKER</h1>
         <label htmlFor="add-task" className="add-task">
-          <div className="open">+</div>
+          <div className="open">
+            <img src={icon} alt="" />
+          </div>
         </label>
         <input className="toggle-input" type="checkbox" id="add-task" name="add-input" />
         <div className="input-container">
