@@ -1,7 +1,11 @@
 .input-container {
   position: absolute;
   top: -100%;
+<<<<<<< HEAD
   margin-top: 350px;
+=======
+  margin-top: 410px;
+>>>>>>> 9b9e3634c890b1ac6f6323367d560553c4d6f945
   background-color: #e0f2f8;
   z-index: 1;
   border: solid 1px black;
@@ -28,6 +32,7 @@
   top: 0;
 }
 
+<<<<<<< HEAD
 .toggle-input:checked +  {
   -webkit-animation: spin 2s infinite; /* Safari 4+ */
   -moz-animation:    spin 2s infinite; /* Fx 5+ */
@@ -46,6 +51,9 @@
 
 
 .day-container {
+=======
+.day-container-scroll {
+>>>>>>> 9b9e3634c890b1ac6f6323367d560553c4d6f945
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -60,6 +68,10 @@
   width: 250px;
   padding: 5px;
   border-radius: 30px;
+}
+
+select {
+  text-align-last:center;
 }
 
 ul {
@@ -82,5 +94,8 @@ h3 {
 }
 
 #headline {
-  font-size: 50px;
+  font-size: 60px;
+  padding: 15px;
+  background: url("./habit_logo_opacity.png") 0 0 repeat;
+  font-weight: 600;
 }

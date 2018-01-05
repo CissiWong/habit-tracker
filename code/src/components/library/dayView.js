@@ -71,6 +71,10 @@ class DayView extends React.Component {
     }
     return (
       <div className="add-task-wrapper">
+
+
+        <h1 id="headline">MITT SCHEMA</h1>
+
         <label htmlFor="add-task" className="add-task">
           <div className="open">
             <img className="rotate" src={icon} alt="" />
@@ -81,7 +85,7 @@ class DayView extends React.Component {
           <Input
             onNewTask={this.handleNewTask} />
         </div>
-        <div className="day-container">
+        <div className="day-container-scroll">
           <select className="scrollDown" onChange={this.filterDay}>
             <option className="weekday">Välj dag...</option>
             <option className="weekday" value="0">Måndag</option>

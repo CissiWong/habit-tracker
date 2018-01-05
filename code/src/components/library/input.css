@@ -13,14 +13,14 @@ form {
   margin-left: -40px;
 } */
 
-/* .icon-container {
+.icon-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.radio-container {
+/*.radio-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -32,6 +32,8 @@ input {
 }
 
 .day-container {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin-left: -40px;
 }
