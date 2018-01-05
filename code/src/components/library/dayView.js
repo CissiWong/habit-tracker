@@ -70,6 +70,11 @@ class DayView extends React.Component {
     }
     return (
       <div>
+
+        <label htmlFor="add-task" className="add-task">
+          <div className="open">+</div>
+        </label>
+        <input className="toggle-input" type="checkbox" id="add-task" name="add-input" />
         <div className="input-container">
           <Input
             onNewTask={this.handleNewTask} />

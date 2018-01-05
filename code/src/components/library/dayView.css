@@ -1,6 +1,23 @@
 .input-container {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: -100%;
+  margin-top: 200px;
+  background-color: #e0f2f8;
+  z-index: 1;
+  width: auto;
+}
+
+.add-task {
+  position: relative;
+  display: block;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-input:checked + .input-container {
+  top: 0;
 }
 
 .day-container {
