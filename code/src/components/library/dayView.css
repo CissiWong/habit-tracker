@@ -1,11 +1,7 @@
 .input-container {
   position: absolute;
   top: -100%;
-<<<<<<< HEAD
-  margin-top: 350px;
-=======
-  margin-top: 410px;
->>>>>>> 9b9e3634c890b1ac6f6323367d560553c4d6f945
+  margin-top: 500px;
   background-color: #e0f2f8;
   z-index: 1;
   border: solid 1px black;
