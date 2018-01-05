@@ -1,7 +1,7 @@
 .input-container {
   position: absolute;
   top: -100%;
-  margin-top: 500px;
+  margin-top: 490px;
   background-color: #e0f2f8;
   z-index: 1;
   border: solid 1px black;
@@ -10,8 +10,9 @@
   transform: translate(-50%, -50%);
 }
 
-.rotate {
-  margin-top: -10px;
+.open {
+  margin: 20px;
+  padding: 10px;
 }
 
 .add-task {
