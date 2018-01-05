@@ -5,13 +5,13 @@ form {
   width: auto;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-left: -40px;
-}
+} */
 
 /* .icon-container {
   display: flex;

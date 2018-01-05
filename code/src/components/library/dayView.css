@@ -4,8 +4,8 @@
   margin-top: 60px;
   background-color: #e0f2f8;
   z-index: 1;
-  margin-left: 0;
   border: solid 1px black;
+  width: 90%;
 }
 
 .add-task {

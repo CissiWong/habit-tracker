@@ -70,7 +70,6 @@ class DayView extends React.Component {
     }
     return (
       <div>
-
         <label htmlFor="add-task" className="add-task">
           <div className="open">+</div>
         </label>
