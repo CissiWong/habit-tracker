@@ -1,5 +1,6 @@
 .icons {
   display: flex;
+  margin: 0 10px;
 }
 
 input[type=radio]:checked + img {
@@ -15,10 +16,6 @@ input[type=radio]:checked + img {
 .iconbutton {
   visibility: hidden;
   position: relative;
-}
-
-.icons {
-  margin: 0 10px;
 }
 
 .imgicon {
