@@ -53,7 +53,7 @@ class Input extends React.Component {
       <div className="input__wrapper">
         {/* Ska göras dynamisk med JS */}
         <form>
-          <div className="container">
+          <div className="activity-container">
             <h1>Vad ska du göra?</h1>
             <label htmlFor="activity">
               <input

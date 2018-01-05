@@ -1,11 +1,12 @@
-.container {
+.activity-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+    margin-left: -40px;
 }
 
-.icon-container {
+/* .icon-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,14 +18,15 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 input {
   border: solid black 1px;
 }
 
 .day-container {
-  display: flex;
+  padding: 0;
+  margin-left: -40px;
 }
 
 .day-container p {
