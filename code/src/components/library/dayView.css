@@ -61,5 +61,8 @@ h3 {
 }
 
 #headline {
-  font-size: 50px;
+  font-size: 60px;
+  padding: 15px;
+  background: url("./habit_logo_opacity.png") 0 0 repeat;
+  font-weight: 600;
 }
